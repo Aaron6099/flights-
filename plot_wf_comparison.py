@@ -58,7 +58,13 @@ for label, fname, color, ls in DATASETS:
 axes[0].set_title("Formation Max Error [m]")
 axes[0].set_xlabel("Time [s]"); axes[0].set_ylabel("Error [m]")
 axes[0].legend(fontsize=7); axes[0].grid(True, alpha=0.3)
-axes[0].set_ylim(bottom=0)
+# 截顶 y 轴：wf0.1 v1.5 失稳会冲到 100m+，撑爆坐标轴使其余曲线不可读。
+# 截到 35m 让稳定/边界区清晰，超出部分在标题注明。
+_FERR_CAP = 35.0
+axes[0].set_ylim(0, _FERR_CAP)
+axes[0].annotate("wf0.1 v1.5 unstable peak off-chart (>100 m)",
+                 xy=(0.02, 0.95), xycoords="axes fraction",
+                 fontsize=7, color="#ff7f0e", va="top")
 
 axes[1].set_title("Min Inter-drone Spacing [m]")
 axes[1].set_xlabel("Time [s]"); axes[1].set_ylabel("Spacing [m]")
