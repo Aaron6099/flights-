@@ -1,0 +1,5 @@
+    [param-check] px4_0/mpc_node_0 max_speed = Double value is: 5.0
+    [param-check] px4_1/mpc_node_1 max_speed = Double value is: 5.0
+    [param-check] px4_2/mpc_node_2 max_speed = Double value is: 5.0
+    [param-check] px4_3/mpc_node_3 max_speed = Double value is: 5.0
+    [param-check] px4_4/mpc_node_4 max_speed = Double value is: 5.0

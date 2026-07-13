@@ -1,0 +1,22 @@
+    出生点(ENU, 来自 scenarios.yaml/S7_grid9_hover): 0,0,0,0,0,0 3,0,0,0,0,0 -3,0,0,0,0,0 0,3,0,0,0,0 0,-3,0,0,0,0 3,3,0,0,0,0 3,-3,0,0,0,0 -3,3,0,0,0,0 -3,-3,0,0,0,0
+=== RUN csv=/home/shirui/flights/regress/grid9A.csv scen=S7_grid9_hover form=grid9 nd=9 wind=0(0N) rows=150  2026-07-09T18:02:28+08:00
+[0] cleanup
+[1] gazebo headless: default.sdf
+[2] spawn 9 px4
+[3] wait Ready for takeoff
+    ready=9/9
+[4] DDS
+[5] launch scenario:=S7_grid9_hover
+    armed=9/9
+[mpc_node-8] [INFO] [1783591578.122643236] [px4_6.mpc_node_6]: acados OCP ready. model = double-integrator (v_dot=u, publish x_pred[1]) [legacy]
+[6] logger -> /home/shirui/flights/regress/grid9A.csv
+[7] collecting
+/home/shirui/run_sim.sh: 行 89: /home/shirui/flights/regress/grid9A.csv: 没有那个文件或目录
+    rows=28/150
+    rows=58/150
+    rows=88/150
+    rows=118/150
+    rows=149/150
+[8] stop
+/home/shirui/run_sim.sh: 第 118 行： 109488 已杀死               ros2 launch mpc_control swarm_launch.py scenario:=$SCENARIO &> /tmp/ctrl.log
+[9] DONE rows=151 lead=0s wind=0s  2026-07-09T18:08:57+08:00

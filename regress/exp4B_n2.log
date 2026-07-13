@@ -1,0 +1,31 @@
+    出生点(ENU, 来自 scenarios.yaml/S36_cross5_circle_nosafety_lag): 0,0,0,0,0,0 3,0,0,0,0,0 -3,0,0,0,0,0 0,3,0,0,0,0 0,-3,0,0,0,0
+=== RUN csv=/home/shirui/flights/regress/exp4B_n2.csv scen=S36_cross5_circle_nosafety_lag form=cross5 nd=5 wind=1(2.0N) rows=130  2026-07-09T18:15:27+08:00
+[0] cleanup
+[1] gazebo headless: wind_world.sdf
+[2] spawn 5 px4
+[3] wait Ready for takeoff
+    ready=5/5
+[4] DDS
+[5] launch scenario:=S36_cross5_circle_nosafety_lag
+    armed=5/5
+[mpc_node-4] [INFO] [1783592219.225619581] [px4_2.mpc_node_2]: acados OCP ready. model = interface-consistent (v_dot=(v_sp-v)/tau, tau=0.500s, publish u0)
+[6] logger -> /home/shirui/flights/regress/exp4B_n2.csv
+[7] collecting
+/home/shirui/run_sim.sh: 行 89: /home/shirui/flights/regress/exp4B_n2.csv: 没有那个文件或目录
+    rows=29/130
+    leader 起动 t=35s ; 注风 t=100s ; 录到 230
+    rows=59/230
+    rows=89/230
+    >>> rows=101 INJECT 2.0N EAST (leader 已飞 66s)
+        x500_0 ok
+        x500_1 ok
+        x500_2 ok
+        x500_3 ok
+        x500_4 ok
+    rows=123/230
+    rows=153/230
+    rows=183/230
+    rows=213/230
+[8] stop
+/home/shirui/run_sim.sh: 第 118 行： 118886 已杀死               ros2 launch mpc_control swarm_launch.py scenario:=$SCENARIO &> /tmp/ctrl.log
+[9] DONE rows=231 lead=35s wind=100s  2026-07-09T18:20:59+08:00

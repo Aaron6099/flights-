@@ -1,0 +1,22 @@
+=== RUN csv=/home/shirui/flights/exp5/exp5_A_legacy.csv scen=S3_trio3_circle_rh form=trio3 nd=3 wind=0(0N) rows=200  2026-07-09T16:37:20+08:00
+[0] cleanup
+[1] gazebo headless: default.sdf
+[2] spawn 3 px4
+[3] wait Ready for takeoff
+    ready=3/3
+[4] DDS
+[5] launch scenario:=S3_trio3_circle_rh
+    armed=3/3
+[mpc_node-2] [INFO] [1783586308.034898512] [px4_0.mpc_node_0]: acados OCP ready. model = double-integrator (v_dot=u, publish x_pred[1]) [legacy]
+[6] logger -> /home/shirui/flights/exp5/exp5_A_legacy.csv
+[7] collecting
+/home/shirui/run_sim.sh: 行 85: /home/shirui/flights/exp5/exp5_A_legacy.csv: 没有那个文件或目录
+    rows=28/200
+    rows=58/200
+    rows=89/200
+    rows=119/200
+    rows=149/200
+    rows=179/200
+[8] stop
+/home/shirui/run_sim.sh: 第 114 行： 76040 已杀死               ros2 launch mpc_control swarm_launch.py scenario:=$SCENARIO &> /tmp/ctrl.log
+[9] DONE rows=201 lead=0s wind=0s  2026-07-09T16:41:57+08:00

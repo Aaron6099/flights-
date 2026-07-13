@@ -1,0 +1,55 @@
+[INFO] [1783579604.435533279] [rec_vel]: rows=6228
+[INFO] [1783579614.421213977] [rec_vel]: rows=12453
+[INFO] [1783579624.421215064] [rec_vel]: rows=18678
+[INFO] [1783579634.421195742] [rec_vel]: rows=24905
+[INFO] [1783579644.421389886] [rec_vel]: rows=31130
+[INFO] [1783579654.421378438] [rec_vel]: rows=37357
+[INFO] [1783579664.421298611] [rec_vel]: rows=43583
+[INFO] [1783579674.421247694] [rec_vel]: rows=49808
+[INFO] [1783579684.421211719] [rec_vel]: rows=56035
+[INFO] [1783579694.421571400] [rec_vel]: rows=62265
+[INFO] [1783579704.421245762] [rec_vel]: rows=68490
+[INFO] [1783579714.421259842] [rec_vel]: rows=74715
+[INFO] [1783579724.421236944] [rec_vel]: rows=80943
+[INFO] [1783579734.421195175] [rec_vel]: rows=87170
+[INFO] [1783579744.421322875] [rec_vel]: rows=93395
+[INFO] [1783579754.421329540] [rec_vel]: rows=99623
+[INFO] [1783579764.421265140] [rec_vel]: rows=105848
+[INFO] [1783579774.421189948] [rec_vel]: rows=112075
+[INFO] [1783579784.421200203] [rec_vel]: rows=118303
+[INFO] [1783579794.421195057] [rec_vel]: rows=124530
+[INFO] [1783579804.421263483] [rec_vel]: rows=130758
+[INFO] [1783579814.421183951] [rec_vel]: rows=136985
+[INFO] [1783579824.421195992] [rec_vel]: rows=143210
+[INFO] [1783579834.421369263] [rec_vel]: rows=149435
+[INFO] [1783579844.421247500] [rec_vel]: rows=155660
+[INFO] [1783579854.421243141] [rec_vel]: rows=161885
+Traceback (most recent call last):
+  File "/home/shirui/rec_vel.py", line 79, in main
+    rclpy.spin(n)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shirui/rec_vel.py", line 87, in <module>
+    main()
+  File "/home/shirui/rec_vel.py", line 83, in main
+    n.f.close(); n.destroy_node(); rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

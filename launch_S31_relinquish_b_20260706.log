@@ -1,0 +1,172 @@
+[INFO] [launch]: All log files can be found below /home/shirui/.ros/log/2026-07-06-09-17-20-295283-idt-9044
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [leader_node-1]: process started with pid [9047]
+[INFO] [mpc_node-2]: process started with pid [9049]
+[leader_node-1] [INFO] [1783300640.510527588] [leader_node]: Leader ready: mode=hover, yaw_mode=fixed, alt=-5.0m (NED), speed=0.5m/s, radius=10.0m
+[mpc_node-2] [INFO] [1783300640.516439928] [px4_0.mpc_node_0]: building acados OCP for drone 0 (N=30, dt=0.05, neighbours=[], d_star=[])...
+[mpc_node-2] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[mpc_node-2]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[mpc_node-2] rm -f libacados_ocp_solver_di_mpc_i0_m1.so
+[mpc_node-2] rm -f di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_hess.o acados_solver_di_mpc_i0_m1.o
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun_jac_ut_xt.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_hess.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun_jac_ut_xt.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_hess.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun_jac_ut_xt.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_hess.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o acados_solver_di_mpc_i0_m1.o acados_solver_di_mpc_i0_m1.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_ode_fun.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_ode_fun.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_forw.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_forw.c
+[mpc_node-2] cc -fPIC -std=c99   -O2 -I/home/shirui/acados/include -I/home/shirui/acados/include/acados -I/home/shirui/acados/include/blasfeo/include -I/home/shirui/acados/include/hpipm/include  -c -o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_adj.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_adj.c
+[mpc_node-2] cc -shared di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_0_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_hess.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_fun_jac_ut_xt.o di_mpc_i0_m1_cost/di_mpc_i0_m1_cost_y_e_hess.o acados_solver_di_mpc_i0_m1.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_ode_fun.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_forw.o di_mpc_i0_m1_model/di_mpc_i0_m1_expl_vde_adj.o -o libacados_ocp_solver_di_mpc_i0_m1.so -L/home/shirui/acados/lib -lacados -lhpipm -lblasfeo -lm \
+[mpc_node-2] -L -l
+[mpc_node-2] [INFO] [1783300642.048782119] [px4_0.mpc_node_0]: acados OCP ready.
+[mpc_node-2] [INFO] [1783300642.048961691] [px4_0.mpc_node_0]: safety_filter ON: track<24.0m alt[0.3,3.0]m d_emerg=1.2m d_warn=2.0m self_timeout=0.3s
+[mpc_node-2] [INFO] [1783300645.689300744] [px4_0.mpc_node_0]: mpc_controller drone 0 ready. birth=[0. 0. 0.], r_i0=[0. 0. 0.], neighbours=[]
+[mpc_node-2] [INFO] [1783300653.833773973] [px4_0.mpc_node_0]: [veh 0] alt_sync disabled, using birth_z=0.00
+[mpc_node-2] [INFO] [1783300653.833920108] [px4_0.mpc_node_0]: first position from drone 0 (calibrated [STABLE] after 69 frames, spread=(0.017,0.009,0.006)): local_mean=(-0.04, -0.15, 0.71) world_birth=(0.04, 0.15, 0.00)
+[mpc_node-2] [INFO] [1783300662.889990692] [px4_0.mpc_node_0]: drone 0: retry ARM+OFFBOARD (nav=4, arm=1) frame=1
+[mpc_node-2] [INFO] [1783300664.230028212] [px4_0.mpc_node_0]: drone 0: OFFBOARD + ARMED confirmed
+[mpc_node-2] [WARN] [1783300664.257543382] [px4_0.mpc_node_0]: DEBUG d0: x0=(-0.06,-0.04,0.56) ref0=(0.00,0.00,-5.00) pred1=(-0.06,-0.04,0.55) leader=(0.00,0.00,-5.00)
+[mpc_node-2] [WARN] [1783300664.271390159] [px4_0.mpc_node_0]: DEBUG d0: x0=(-0.06,-0.04,0.55) ref0=(0.00,0.00,-5.00) pred1=(-0.06,-0.04,0.55) leader=(0.00,0.00,-5.00)
+[mpc_node-2] [WARN] [1783300664.290576580] [px4_0.mpc_node_0]: DEBUG d0: x0=(-0.06,-0.04,0.55) ref0=(0.00,0.00,-5.00) pred1=(-0.06,-0.04,0.55) leader=(0.00,0.00,-5.00)
+[mpc_node-2] [WARN] [1783300664.311887295] [px4_0.mpc_node_0]: DEBUG d0: x0=(-0.06,-0.04,0.55) ref0=(0.00,0.00,-5.00) pred1=(-0.06,-0.04,0.55) leader=(0.00,0.00,-5.00)
+[mpc_node-2] [WARN] [1783300664.330750938] [px4_0.mpc_node_0]: DEBUG d0: x0=(-0.06,-0.04,0.55) ref0=(0.00,0.00,-5.00) pred1=(-0.06,-0.04,0.55) leader=(0.00,0.00,-5.00)
+[mpc_node-2] [INFO] [1783300665.230485913] [px4_0.mpc_node_0]: [d0] solve: status=0 time=0.23ms cost=125.8 pos=(-0.08,-0.01,0.58) local=(-0.11,-0.16,0.58) wbirth=(0.04,0.15,0.00) ref=(0.00,0.00) leader=(0.00,0.00) fallbacks=0
+[mpc_node-2] [INFO] [1783300666.231285642] [px4_0.mpc_node_0]: [d0] solve: status=0 time=0.29ms cost=123.8 pos=(-0.08,0.02,0.56) local=(-0.12,-0.14,0.56) wbirth=(0.04,0.15,0.00) ref=(0.00,0.00) leader=(0.00,0.00) fallbacks=0
+[mpc_node-2] [WARN] [1783300667.610070359] [px4_0.mpc_node_0]: drone 0: OFFBOARD LOST (nav=4) — resetting, will re-arm
+[mpc_node-2] [INFO] [1783300667.610782850] [px4_0.mpc_node_0]: drone 0: retry ARM+OFFBOARD (nav=4, arm=2) frame=1
+[mpc_node-2] [INFO] [1783300668.609743522] [px4_0.mpc_node_0]: drone 0: OFFBOARD + ARMED confirmed
+[mpc_node-2] [WARN] [1783300668.631100975] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=1)
+[mpc_node-2] [WARN] [1783300668.650959761] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=2)
+[mpc_node-2] [WARN] [1783300668.671386864] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=3)
+[mpc_node-2] [WARN] [1783300668.691219799] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=4)
+[mpc_node-2] [WARN] [1783300668.711096492] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=5)
+[mpc_node-2] [WARN] [1783300668.731310138] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=6)
+[mpc_node-2] [WARN] [1783300668.751003144] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=7)
+[mpc_node-2] [WARN] [1783300668.771442094] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=8)
+[mpc_node-2] [WARN] [1783300668.790924960] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=9)
+[mpc_node-2] [WARN] [1783300668.813572401] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=10)
+[mpc_node-2] [WARN] [1783300668.830784105] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=11)
+[mpc_node-2] [WARN] [1783300668.850746448] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=12)
+[mpc_node-2] [WARN] [1783300668.871631272] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=13)
+[mpc_node-2] [WARN] [1783300668.890907042] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=14)
+[mpc_node-2] [WARN] [1783300668.911140954] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=15)
+[mpc_node-2] [WARN] [1783300668.930892703] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=16)
+[mpc_node-2] [WARN] [1783300668.950932151] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=17)
+[mpc_node-2] [WARN] [1783300668.971249622] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=18)
+[mpc_node-2] [WARN] [1783300668.991019106] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=19)
+[mpc_node-2] [WARN] [1783300669.011245001] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=20)
+[mpc_node-2] [WARN] [1783300669.031080267] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=21)
+[mpc_node-2] [WARN] [1783300669.051088318] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=22)
+[mpc_node-2] [WARN] [1783300669.070636582] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=23)
+[mpc_node-2] [WARN] [1783300669.091192199] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=24)
+[mpc_node-2] [WARN] [1783300669.111131713] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=25)
+[mpc_node-2] [WARN] [1783300669.131058684] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=26)
+[mpc_node-2] [WARN] [1783300669.151497064] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=27)
+[mpc_node-2] [WARN] [1783300669.171529936] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=28)
+[mpc_node-2] [WARN] [1783300669.191591495] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=29)
+[mpc_node-2] [WARN] [1783300669.212626819] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=30)
+[mpc_node-2] [WARN] [1783300669.233598676] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=31)
+[mpc_node-2] [WARN] [1783300669.251194315] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=32)
+[mpc_node-2] [WARN] [1783300669.271528325] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=33)
+[mpc_node-2] [WARN] [1783300669.291294535] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=34)
+[mpc_node-2] [WARN] [1783300669.311951446] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=35)
+[mpc_node-2] [WARN] [1783300669.331097006] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=36)
+[mpc_node-2] [WARN] [1783300669.351188696] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=37)
+[mpc_node-2] [WARN] [1783300669.371336209] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=38)
+[mpc_node-2] [WARN] [1783300669.391042991] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=39)
+[mpc_node-2] [WARN] [1783300669.411400255] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=40)
+[mpc_node-2] [WARN] [1783300669.431503447] [px4_0.mpc_node_0]: [d0] acados status=4 — holding position (total fallbacks=41)
+[mpc_node-2] [INFO] [1783300669.511453708] [px4_0.mpc_node_0]: [d0] solve: status=0 time=0.29ms cost=3.4 pos=(0.07,-0.03,-3.54) local=(0.03,-0.18,-3.54) wbirth=(0.04,0.15,0.00) ref=(0.00,0.00) leader=(0.00,0.00) fallbacks=41
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 17.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 18.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 17.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 17.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 16.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 15.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 17.
+[mpc_node-2] 
+[mpc_node-2] SQP_RTI: QP solver returned error status 3 (ACADOS_MINSTEP) QP iteration 17.
+[mpc_node-2] [INFO] [1783300670.510776296] [px4_0.mpc_node_0]: [d0] solve: status=0 time=0.18ms cost=0.7 pos=(0.04,-0.07,-4.38) local=(0.01,-0.22,-4.38) wbirth=(0.04,0.15,0.00) ref=(0.00,0.00) leader=(0.00,0.00) fallbacks=41
+[mpc_node-2] [INFO] [1783300671.510989430] [px4_0.mpc_node_0]: [d0] solve: status=0 time=0.20ms cost=1.4 pos=(0.02,-0.03,-4.19) local=(-0.02,-0.18,-4.19) wbirth=(0.04,0.15,0.00) ref=(0.00,0.00) leader=(0.00,0.00) fallbacks=41
+[mpc_node-2] [WARN] [1783300671.511228798] [px4_0.mpc_node_0]: [d0] SAFETY HOLD ['fence_alt_high(4.2)']
+[mpc_node-2] [ERROR] [1783300671.610716846] [px4_0.mpc_node_0]: [d0] SAFETY RELINQUISH ['fence_alt_high(4.2)'] — DO_SET_MODE(Hold) 主动交还 PX4，停流闩锁
+[ERROR] [mpc_node-2]: process has died [pid 9049, exit code -9, cmd '/home/shirui/ros2_control_mpc_ws/install/mpc_control/lib/mpc_control/mpc_node --ros-args -r __node:=mpc_node_0 -r __ns:=/px4_0 --params-file /tmp/launch_params_0hxubnba'].
+[ERROR] [leader_node-1]: process has died [pid 9047, exit code -9, cmd '/home/shirui/ros2_control_mpc_ws/install/mpc_control/lib/mpc_control/leader_node --ros-args -r __node:=leader_node --params-file /tmp/launch_params_8_o3x9aj'].

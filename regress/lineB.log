@@ -1,0 +1,24 @@
+    出生点(ENU, 来自 scenarios.yaml/S40_cross5_line_lag): 0,0,0,0,0,0 3,0,0,0,0,0 -3,0,0,0,0,0 0,3,0,0,0,0 0,-3,0,0,0,0
+=== RUN csv=/home/shirui/flights/regress/lineB.csv scen=S40_cross5_line_lag form=cross5 nd=5 wind=0(0N) rows=220  2026-07-09T17:57:06+08:00
+[0] cleanup
+[1] gazebo headless: default.sdf
+[2] spawn 5 px4
+[3] wait Ready for takeoff
+    ready=5/5
+[4] DDS
+[5] launch scenario:=S40_cross5_line_lag
+    armed=5/5
+[mpc_node-3] [INFO] [1783591118.668045076] [px4_1.mpc_node_1]: acados OCP ready. model = interface-consistent (v_dot=(v_sp-v)/tau, tau=0.500s, publish u0)
+[6] logger -> /home/shirui/flights/regress/lineB.csv
+[7] collecting
+/home/shirui/run_sim.sh: 行 89: /home/shirui/flights/regress/lineB.csv: 没有那个文件或目录
+    rows=28/220
+    rows=58/220
+    rows=88/220
+    rows=118/220
+    rows=149/220
+    rows=179/220
+    rows=209/220
+[8] stop
+/home/shirui/run_sim.sh: 第 118 行： 103905 已杀死               ros2 launch mpc_control swarm_launch.py scenario:=$SCENARIO &> /tmp/ctrl.log
+[9] DONE rows=221 lead=0s wind=0s  2026-07-09T18:02:28+08:00

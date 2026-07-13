@@ -1,0 +1,31 @@
+=== WIND RUN: csv=/home/shirui/flights/exp1/exp1_B_vmax5.csv scen=S35_cross5_circle_nosafety_vmax5 force=2.0N wind=leader_start+65s post=160rows
+=== started 2026-07-09T14:22:01+08:00
+[0] cleanup
+[1] gazebo headless (wind_world.sdf)
+[2] spawn 5 px4
+[3] wait Ready for takeoff
+    ready=5/5
+[4] DDS
+[5] launch controller scenario:=S35_cross5_circle_nosafety_vmax5
+    armed=5/5
+[6] logger -> /home/shirui/flights/exp1/exp1_B_vmax5.csv
+[7] 等领队起动 -> +65s 注风 -> 再录 160 行
+/home/shirui/run_wind.sh: 行 84: /home/shirui/flights/exp1/exp1_B_vmax5.csv: 没有那个文件或目录
+    rows=29 lead=0 wind=0 inj=0
+    >>> leader 起动 t=36s ; 注风将在 t=101s
+    rows=59 lead=36 wind=101 inj=0
+    rows=89 lead=36 wind=101 inj=0
+    >>> rows=101  INJECT 2.0N EAST at 2026-07-09T14:25:17+08:00  (leader 已飞 65s)
+        x500_0 ok
+        x500_1 ok
+        x500_2 ok
+        x500_3 ok
+        x500_4 ok
+    rows=123 lead=36 wind=101 inj=1
+    rows=153 lead=36 wind=101 inj=1
+    rows=183 lead=36 wind=101 inj=1
+    rows=213 lead=36 wind=101 inj=1
+    rows=243 lead=36 wind=101 inj=1
+[8] stop logger + controller
+/home/shirui/run_wind.sh: 第 114 行： 50847 已杀死               ros2 launch mpc_control swarm_launch.py scenario:=$SCENARIO &> /tmp/ctrl.log
+[9] DONE rows=261 leader_start=36s wind=101s csv=/home/shirui/flights/exp1/exp1_B_vmax5.csv  2026-07-09T14:28:03+08:00
